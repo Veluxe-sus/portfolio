@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Page</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #fff5e6 0%, #ffe8cc 100%);
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        header h1 {
+            color: darkred;
+            background-color: floralwhite;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .recipe-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            margin: 20px auto;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        section {
+            margin: 30px 0;
+        }
+        
+        section h2 {
+            color: #ff6b35;
+            margin-bottom: 15px;
+        }
+        
+        .ingredients li {
+            color: green;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        
+        .instructions li {
+            color: mediumblue;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: #333;
+            color: white;
+            border-radius: 10px;
+        }
+        
+        footer p {
+            font-style: italic;
+            margin: 0;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Chocolate Chip Cookies</h1>
+    </header>
+    
+    <div class="container">
+        <!-- Recipe Image -->
+        <img src="https://media.istockphoto.com/id/1265001647/photo/chocolate-chip-cookies.jpg?s=612x612&w=0&k=20&c=3fhn-GzRbWuHJmjWbjaga5mkD9S673OtJv9gMUSSoBo=" 
+             alt="Chocolate chip cookies" class="recipe-image">
+        
+        <!-- Ingredients Section -->
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>2 cups all-purpose flour</li>
+                <li>1 cup butter (softened)</li>
+                <li>1 cup brown sugar</li>
+                <li>1/2 cup granulated sugar</li>
+                <li>2 large eggs</li>
+                <li>2 teaspoons vanilla extract</li>
+                <li>1 teaspoon baking soda</li>
+                <li>1/2 teaspoon salt</li>
+                <li>2 cups chocolate chips</li>
+            </ul>
+        </section>
+        
+        <!-- Instructions Section -->
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Preheat your oven to 350°F (175°C).</li>
+                <li>In a large bowl, cream together the butter, brown sugar, and granulated sugar until fluffy.</li>
+                <li>Beat in the eggs one at a time, then stir in the vanilla extract.</li>
+                <li>In a separate bowl, combine flour, baking soda, and salt.</li>
+                <li>Gradually blend the dry ingredients into the butter mixture.</li>
+                <li>Fold in the chocolate chips.</li>
+                <li>Drop rounded tablespoons of dough onto ungreased cookie sheets.</li>
+                <li>Bake for 10-12 minutes or until edges are golden brown.</li>
+                <li>Cool on baking sheet for 2 minutes before removing to a wire rack.</li>
+            </ol>
+        </section>
+    </div>
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>Enjoy your delicious homemade cookies! Happy baking!</p>
+        <a href="http://127.0.0.1:5500/portfolio.html" class="back-btn">← Back to Portfolio</a>
+    </footer>
+</body>
+</html>

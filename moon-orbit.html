@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Orbiting Earth</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #fff5e6 0%, #ffe8cc 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        
+        h1 {
+            color: #ff6b35;
+            margin-bottom: 30px;
+        }
+        
+        /* Container */
+        .orbit-container {
+            position: relative;
+            width: 250px;
+            height: 250px;
+        }
+        
+        /* Earth in center */
+        .earth {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #1e90ff, #4169e1);
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 30px rgba(30, 144, 255, 0.5);
+        }
+        
+        /* Moon's orbit path */
+        .moon-orbit {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 2px dotted #999;
+            border-radius: 50%;
+            animation: rotate 5s linear infinite;
+        }
+        
+        /* Moon */
+        .moon {
+            width: 30px;
+            height: 30px;
+            background: #ccc;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 15px rgba(200, 200, 200, 0.5);
+        }
+        
+        /* Rotation animation */
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .back-btn {
+            margin-top: 50px;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+        }
+        
+        .info {
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Moon Orbiting Earth</h1>
+    
+    <div class="orbit-container">
+        <div class="earth"></div>
+        <div class="moon-orbit">
+            <div class="moon"></div>
+        </div>
+    </div>
+    
+    
+    
+    <a href="http://127.0.0.1:5500/portfolio.html" class="back-btn">← Back to Portfolio</a>
+</body>
+</html>
